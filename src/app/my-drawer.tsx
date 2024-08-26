@@ -10,7 +10,6 @@ import {
   SheetDescription,
   Sheet,
 } from "@/components/ui/sheet";
-import { Drawer } from "vaul";
 
 export function MyDrawer() {
   return (
@@ -19,7 +18,7 @@ export function MyDrawer() {
         <Button>Open</Button>
       </SheetTrigger>
       <SheetContent side={"bottom"}>
-        <SheetHeader>
+        <SheetHeader autoFocus={false}>
           <div className="max-w-md w-full mx-auto flex flex-col overflow-auto p-4 rounded-t-[10px]">
             <Input
               className="border border-gray-400 my-8"
