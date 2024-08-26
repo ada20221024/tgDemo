@@ -10,6 +10,7 @@ import {
   SheetDescription,
   Sheet,
 } from "@/components/ui/sheet";
+import { ModalContent } from "./ModalContent";
 
 export function MyDrawer() {
   return (
@@ -19,16 +20,7 @@ export function MyDrawer() {
       </SheetTrigger>
       <SheetContent side={"bottom"}>
         <SheetHeader autoFocus={false}>
-          <div className="max-w-md w-full mx-auto flex flex-col overflow-auto p-4 rounded-t-[10px]">
-            <Input
-              className="border border-gray-400 my-8"
-              placeholder="Input"
-            />
-            <div className=" w-full flex justify-between">
-              <Button className="mt-8">Submit</Button>
-              <Button className="mt-8">Cancel</Button>
-            </div>
-          </div>
+          <ModalContent />
         </SheetHeader>
       </SheetContent>
     </Sheet>

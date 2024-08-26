@@ -3,6 +3,8 @@ import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import { useState } from "react";
 import { MyDrawer } from "./my-drawer";
+import { ModalSheet } from "./modal-sheet";
+import { AvoidKeyboard } from "./avaidKeyboard";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -18,7 +20,8 @@ export default function Home() {
           priority
         />
       </div>
-      <MyDrawer />
+      {/* <ModalSheet /> */}
+      <AvoidKeyboard />
     </main>
   );
 }
