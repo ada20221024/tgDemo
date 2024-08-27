@@ -36,7 +36,7 @@ export function AvoidKeyboard() {
             <Sheet.Scroller>
               <Content>
                 <p>Focus input to show virtual keyboard</p>
-
+                <div>{keyboardHeight.get()}</div>
                 <Input ref={inputRef} placeholder="Type something..." />
 
                 {isKeyboardOpen ? (
