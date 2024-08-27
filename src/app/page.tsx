@@ -5,6 +5,7 @@ import { useState } from "react";
 import { MyDrawer } from "./my-drawer";
 import { ModalSheet } from "./modal-sheet";
 import { AvoidKeyboard } from "./avaidKeyboard";
+import { SDrawer } from "./sDrawer";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -21,7 +22,9 @@ export default function Home() {
         />
       </div>
       {/* <ModalSheet /> */}
-      <AvoidKeyboard />
+      {/* <AvoidKeyboard />
+       */}
+      <SDrawer />
     </main>
   );
 }
