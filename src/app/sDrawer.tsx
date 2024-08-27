@@ -14,15 +14,11 @@ import { ModalContent } from "./ModalContent";
 export const SDrawer = () => {
   return (
     <Drawer>
-      <DrawerTrigger>Open</DrawerTrigger>
+      <DrawerTrigger>
+        <Button>Open Drawer</Button>
+      </DrawerTrigger>
       <DrawerContent>
         <ModalContent />
-        <DrawerFooter>
-          <Button>Submit</Button>
-          <DrawerClose>
-            <Button variant="outline">Cancel</Button>
-          </DrawerClose>
-        </DrawerFooter>
       </DrawerContent>
     </Drawer>
   );
